@@ -1,0 +1,111 @@
+{
+	q: 'What is the name of the biggest ocean on Earth \n\n',
+	c: '1) Atlantic Ocean \n2) The Pacific Ocean \n3) Indian Ocean',
+	a: 2,
+	category: 'geography'
+}, {
+	q: 'By area, what is the biggest state in the USA?? \n\n',
+	c: '1) New York \n2) California \n3) Alaska',
+	a: 3,
+	category: 'geography'
+} {
+	q: 'What is the capital city of Australia? \n\n',
+	c: '1) Melbourne \n2) Sydney \n3) Canberra',
+	a: 3,
+	category: 'geography'
+}, {
+	q: 'Stratus, cumulus, cirrus and nimbus are types of what \n\n',
+	c: '1) Stones FC \n2) Clouds \n3) Winds',
+	a: 2,
+	category: 'geography'
+} {
+	q: 'What is the name of a person who studies earthquakes? \n\n', //5
+	c: '1) Seismologist \n2) Archaeologist \n3) Dentist',
+	a: 1,
+	category: 'geography'
+}, {
+	q: 'In which country would you find the Leaning Tower of Pisa? \n\n',
+	c: '1) France \n2) Italy \n3) Greece',
+	a: 2,
+	category: 'geography'
+}, {
+	q: 'What is the name of the highest mountain on Earth \n\n',
+	c: '1) Mt Everest \n2) Kebnekaise \n3) K2',
+	a: 1,
+	category: 'geography'
+}, {
+	q: 'Helsinki is the capital city of which country? \n\n',
+	c: '1) India \n2) China \n3) Finland',
+	a: 3,
+	category: 'geography'
+}, {
+	q: 'The Yangtze is the longest river in the world? \n\n',
+	c: '1) Yes \n2) No \n3) WAT?',
+	a: 2,
+	category: 'geography'
+}, {
+	q: 'The terms "breeze" and "gale" help describe the speed of what? \n\n', //10
+	c: '1) Light \n2) Sound \n3) Wind',
+	a: 3,
+	category: 'geography'
+}, {
+	q: 'Which US state has the most farmland, in square miles? \n\n', //11
+	c: '1) Montana \n2) Utah \n3) Texas',
+	a: 3,
+	category: 'geography'
+}, {
+	q: 'What countrys language is Magyar? \n\n',
+	c: '1) Estonia \n2) Hungary \n3) Germany',
+	a: 2,
+	category: 'geography'
+}, { //13
+	q: 'What European capital stands on the river Aare? \n\n',
+	c: '1) Bern \n2) Paris \n3) Stockholm',
+	a: 1,
+	category: 'geography'
+}, { //14
+	q: 'In which country would you find the Taj Mahal? \n\n',
+	c: '1) India \n2) China \n3) Egypt',
+	a: 1,
+	category: 'geography'
+}, { //15
+	q: 'Which country has the most people? \n\n',
+	c: '1) India \n2) China \n3) America',
+	a: 2,
+	category: 'geography'
+}, { //16
+	q: 'How many states are there in the USA? \n\n',
+	c: '1) 40 \n2) 50 \n3) 60',
+	a: 2,
+	category: 'geography'
+}, { //17
+	q: 'On which continent is the Sahara desert? \n\n',
+	c: '1) Asia \n2) Europe \n3) Africa',
+	a: 3,
+	category: 'geography'
+}, { //18
+	q: 'In what city would you find Charing Cross station? \n\n',
+	c: '1) Glasgow \n2) Dublin \n3) London',
+	a: 3,
+	category: 'geography'
+}, { //19
+	q: 'How do you say ‘Hello’ in Spanish? \n\n',
+	c: '1) Bonjour \n2) Hola \n3) Hallo',
+	a: 2,
+	category: 'geography'
+}, { //20
+	q: 'If you had some yen to spend, what country would you be in? \n\n',
+	c: '1) Japan \n2) China \n3) India',
+	a: 1,
+	category: 'geography'
+}, { //21
+	q: 'Which country’s capital city is Berlin? \n\n',
+	c: '1) Germany \n2) France \n3) Belgium',
+	a: 1,
+	category: 'geography'
+}, { //22
+	q: 'On which continent would you find the South Pole? \n\n',
+	c: '1) Europe \n2) Africa \n3) Antarctica',
+	a: 3,
+	category: 'geography'
+}
