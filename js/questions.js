@@ -81,7 +81,7 @@ var questions = [{
 }, {
 	q: 'What is the highest possible score with three darts? \n\n',
 	c: '1) 180 \n2) 160 \n3) 200',
-	a: 2,
+	a: 1,
 	category: 'sport'
 }, {
 	q: 'In a rugby league team, how many players are there? \n\n',
