@@ -4,8 +4,9 @@ var totalPoints = 0;
 var points = 0;
 var answer;
 var winOrLose;
+var level;
 
-var levels = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+var levelsArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 var chooseCategory = function () {
 	var category = true;
@@ -13,7 +14,7 @@ var chooseCategory = function () {
 
 	while (category === true) {
 		choise = prompt('Do you want to remove any cetegory?\n\n' +
-			'0) NO THANXXXX \n' +
+			'0) No thanks \n' +
 			'1) Sport \n' +
 			'2) Geography \n' +
 			'3) General \n' +
@@ -74,7 +75,8 @@ var checkAnswer = function (question, answer) {
 		alert('Correct');
 		points = points + 1;
 	} else {
-		alert('Wrong answer');
+		alert('Wrong answer.\n\n' + question.c + '\n\nThe correct answer was: ' + question.a);
+
 	}
 };
 
@@ -117,38 +119,45 @@ var checkWinOrLose = function (resultBool) {
 var runGame = function () {
 
 	var countLevel = 1;
-	var category = chooseCategory();
-	removeCategory(category);
+	var category = chooseCategory(); //om man vill ta bort en kategori med frågor
+	removeCategory(category); //tar bort den kategorin man har valt
 	alert('You need 1/10 points to make it to the next level');
 
-	for (var j = 0; j < 10; j++) { //for för vaje nivå
+	for (level = 0; level < 10; level++) { //for för vaje nivå
 
-		var levelTest = levelCheck(points, levels[j]);
-		points = 0;
+		var levelTest = levelCheck(points, levelsArray[level]); //kollar om man har tillräckligt med poäng för nästa nivå
+		points = 0; //sätts till noll för att räkna poäng per nivå
 
 		if (levelTest === true) {
-			for (var l = 0; l < 10; l++) {
-				shuffleQuestions(questions);
-				answer = askQuestion(questions[0]);
-				checkAnswer(questions[0], answer);
-				removeQuestion();
+			for (var l = 0; l < 10; l++) { //l är vilken fråga i varje nivå
+				shuffleQuestions(questions); //shufflar objekten/frågorna i arrayn
+				answer = askQuestion(questions[0]); //tar ut fråga 1 som är random
+				checkAnswer(questions[0], answer); //kollar om svaret är rätt
+				removeQuestion(); //tar bort den frågan ur array questions
 			}
-			if (l === 10 && j < 9) {
+			if (l === 10 && level < 9) {
 				if (points >= countLevel) { //om du klarat nivån
 					alert('Congratulations, you have made it to Level: ' + (countLevel + 1) + ' \nYou got ' + points + '/10 points\n\n' + 'You need ' + (countLevel + 1) + '/10 points to make it to the next level');
-					winOrLose = true;
 				} else {
 					winOrLose = false;
 				}
 				countLevel++;
 			}
 
+			if (l === 10 && level === 9) {
+				if (points >= countLevel) { //om du klarat nivå 10
+					winOrLose = true;
+				} else {
+					winOrLose = false;
+				}
+			}
 		} else {}
-		addPoints(points);
+
+		addPoints(points); //räknar ihop totala poängen från varje nivå
 	}
 
-	checkWinOrLose(winOrLose);
-	checkPoints();
+	checkWinOrLose(winOrLose); //kollar om man vunnit eller förlorat
+	checkPoints(); //visar hur många poäng man fått
 };
 
-runGame();
+runGame(); //kör spelet genom funktionen runGame()
