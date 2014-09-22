@@ -248,4 +248,364 @@ var questions = [{
 	c: '1) False \n2) True',
 	a: 2,
 	category: 'sport'
+}, {
+	q: 'What date was D-Day? \n\n',
+	c: '1) 6th June, 1944 \n2) 5th June, 1944 \n3) 6th June, 1946 \n4) 5th June, 1946',
+	a: 1,
+	category: 'history'
+}, {
+	q: 'How many of King Henry VIIIs wives were called Catherine? \n\n',
+	c: '1) 2 \n2) 3\n3) 4',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'Which country was General Franco a dictator of? \n\n',
+	c: '1) France \n2) Spain \n3) Italy',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'During which year did Fidel Castro gain power over Cuba? \n\n',
+	c: '1) 1939 \n2) 1949 \n3) 1959',
+	a: 3,
+	category: 'history'
+}, {
+	q: 'What is the name of the city where John F. Kennedy was assassinated? \n\n',
+	c: '1) Dallas \n2) New York \n3) Boston',
+	a: 1,
+	category: 'history'
+}, {
+	q: 'Which war first introduced the use of tanks? \n\n',
+	c: '1) The cold war \n2) World War 1 \n3) World war 2',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'During which year did Sir Winston Churchill step into power over Great Britain? \n\n',
+	c: '1) 1880 \n2) 1910 \n3) 1940',
+	a: 3,
+	category: 'history'
+}, {
+	q: 'What were Norsemen better known as? \n\n',
+	c: '1) Pirates \n2) Crusaders \n3) Vikings',
+	a: 3,
+	category: 'history'
+}, {
+	q: 'During which year did the RMS Titanic sink? \n\n',
+	c: '1) 1912 \n2) 1922 \n3) 1932',
+	a: 1,
+	category: 'history'
+}, {
+	q: 'Who was the first president of America? \n\n', // 10 HISTORY QUESTIONS
+	c: '1) Benjamin Franklin \n2) George Washington \n)3 John F Kennedy',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'During which year did Adolf Hitler die? \n\n',
+	c: '1) 1945 \n2) 1950 \n3) 1940',
+	a: 1,
+	category: 'history'
+}, {
+	q: 'During which year did Christopher Columbus discover the Bahamas? \n\n',
+	c: '1) 1392 \n2) 1492 \n3) 1592',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'Which famous artist painted the ceiling of the Sistine Chapel? \n\n',
+	c: '1) Leonardo Da Vinci \n2) Michelangelo \n3) Vincent Van Gogh',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'What was the Flying Scotsman? \n\n',
+	c: '1) A ship \n2) A plane \n3) A train',
+	a: 3,
+	category: 'history'
+}, {
+	q: 'In which country was the Statue of Zeus located? \n\n',
+	c: '1) Greece \n2) France \n3) Italy',
+	a: 1,
+	category: 'history'
+}, {
+	q: 'Which city did the Romans refer to as Londinium? \n\n',
+	c: '1) Milano \n2) London \n3) Liverpool',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'In which country was Adolf Hitler born? \n\n',
+	c: '1) Germany \n2) Poland \n3) Austria',
+	a: 3,
+	category: 'history'
+}, {
+	q: 'In which year did the Falklands War take place? \n\n',
+	c: '1) 1962 \n2) 1972 \n3) 1982',
+	a: 3,
+	category: 'history'
+}, {
+	q: 'What is the name of King Arthurs sword? \n\n',
+	c: '1) Excalibur \n2) Glamdring \n3) Hywelbane',
+	a: 1,
+	category: 'history'
+}, {
+	q: 'Which country was Saddam Hussein a ruler of? \n\n', // 20 HISTORY QUESTIONS
+	c: '1) Iran \n2) Iraq \n)3 Montenegro',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'During which year was The Great Fire of London? \n\n',
+	c: '1) 1666 \n2) 1777 \n3) 1888',
+	a: 1,
+	category: 'history'
+}, {
+	q: 'What was the name of the fleet that launched an attack on England in May 1588? \n\n',
+	c: '1) The French Armada \n2) The Spanish Armada \n3) The German Armada',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'Which country did Iraq invade in 1990? \n\n',
+	c: '1) Iran \n2) Kuwait \n3) Israel',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'At the Battle of Trafalgar, what was the name of Nelsons flagship? \n\n',
+	c: '1) The Keeper \n2) The Dutchmen \n3) The Victory',
+	a: 3,
+	category: 'history'
+}, {
+	q: 'What was the name of the mistress of Adolf Hitler? \n\n',
+	c: '1) Eva Braun \n2) Jane Seymour \n3) Amelia Earhart',
+	a: 1,
+	category: 'history'
+}, {
+	q: 'What was the name of the first American president to be assassinated? \n\n',
+	c: '1) George Washington \n2) Abraham Lincoln \n3) John f Kennedy',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'During which year did Columbus discover America? \n\n',
+	c: '1) 1292 \n2) 1392 \n3) 1492',
+	a: 3,
+	category: 'history'
+}, {
+	q: 'Which leader famously said we shall fight them on the beaches? \n\n',
+	c: '1) Napoleon \n2) Da Vinci \n3) Winston Churchill',
+	a: 3,
+	category: 'history'
+}, {
+	q: 'Who was first to fly over the English Channel? \n\n',
+	c: '1) Louis Bleriot \n2) Amelia Eahart \n3) Jane Seymour',
+	a: 1,
+	category: 'history'
+}, {
+	q: 'In which year did the first Afghan war take place? \n\n', // 30 HISTORY QUESTIONS
+	c: '1) 1809 \n2) 1839 \n)3 1869',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'With which country was the first China war fought against? \n\n',
+	c: '1) Britain \n2) Sweden \n3) Spain',
+	a: 1,
+	category: 'history'
+}, {
+	q: 'What was the name of the famous British Admiral who only had one eye? \n\n',
+	c: '1) Amar \n2) Nelson \n3) Eustus',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'What is the name given to the Pirates flag that bears the skull and cross bones? \n\n',
+	c: '1) Jolly Jimmy \n2) Jolly Roger \n3) Jolly Nelson',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'In 1999, which country voted to keep the Queen? \n\n',
+	c: '1) England \n2) Scotland \n3) Australia',
+	a: 3,
+	category: 'history'
+}, {
+	q: 'What was the name of the man that killed Abraham Lincoln? \n\n',
+	c: '1) John Wilkes Booth \n2) Jolly Roger \n3) Neville Chamberlain',
+	a: 1,
+	category: 'history'
+}, {
+	q: 'Which army destroyed the Inca empire in 1532? \n\n',
+	c: '1) Rome \n2) Spain \n3) Norsemen',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'Who was the President of America before Barack Obama? \n\n',
+	c: '1) Richard Nixon \n2) Hillary Clinton \n3) George Bush',
+	a: 3,
+	category: 'history'
+}, {
+	q: 'Which famous car manufacturer designed the merlin engine which was used to power numerous aircrafts during the second world war? \n\n',
+	c: '1) Volksvagen \n2) Mercedes \n3) Rolls-Royce',
+	a: 3,
+	category: 'history'
+}, {
+	q: 'In which year did Germany attack France during the Second World War? \n\n',
+	c: '1) 1940 \n2) 1941 \n3) 1942',
+	a: 1,
+	category: 'history'
+}, {
+	q: 'Who designed the dome of St Peters in Rome? \n\n', // 40 HISTORY QUESTIONS
+	c: '1) Leonardo Da Vinci \n2) Michelangelo \n)3 Vincent Van Gogh',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'Which country has the worlds oldest flag? \n\n',
+	c: '1) Denmark \n2) Sweden \n3) Spain',
+	a: 1,
+	category: 'history'
+}, {
+	q: 'In which city was the Titanic built? \n\n',
+	c: '1) Warsawa \n2) Belfast \n3) Riga',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'Which two countries fought during the Falklands War? \n\n',
+	c: '1) Argentina and Italy \n2) Argentina and Great Britain \n3) Italy and Great Britain',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'What is the largest of the dinosaurs? \n\n',
+	c: '1) Tyrannosaurus Rex \n2) Triceratops \n3) Brachiosaurus',
+	a: 3,
+	category: 'history'
+}, {
+	q: 'During which year did the London Underground first open? \n\n',
+	c: '1) 1863 \n2) 1873 \n3) 1883',
+	a: 1,
+	category: 'history'
+}, {
+	q: 'Which German city was divided by a wall? \n\n',
+	c: '1) Munich \n2) Berlin \n3) Frankfurt',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'In which city was Martin Luther King shot in the year of 1968? \n\n',
+	c: '1) Dallas \n2) Boston \n3) Memphis',
+	a: 3,
+	category: 'history'
+}, {
+	q: 'Who was the first Republican President of America? \n\n',
+	c: '1) Richard Nixon \n2) John f Kennedy \n3) Abraham Lincoln',
+	a: 3,
+	category: 'history'
+}, {
+	q: 'Which nation invented fireworks? \n\n',
+	c: '1) China \n2) Japan \n3) USA',
+	a: 1,
+	category: 'history'
+}, {
+	q: 'What was the yame of the president who was shot whilst walking to California Governor Jerry Brown office? \n\n', // 50 HISTORY QUESTIONS
+	c: '1) John F Kennedy \n2) Gerald Ford \n)3 Abraham Lincoln',
+	a: 2,
+	category: 'history'
+}, {
+	q: 'What is the name of the biggest ocean on Earth \n\n',
+	c: '1) Atlantic Ocean \n2) The Pacific Ocean \n3) Indian Ocean',
+	a: 2,
+	category: 'geography'
+}, {
+	q: 'By area, what is the biggest state in the USA?? \n\n',
+	c: '1) New York \n2) California \n3) Alaska',
+	a: 3,
+	category: 'geography'
+}, {
+	q: 'What is the capital city of Australia? \n\n',
+	c: '1) Melbourne \n2) Sydney \n3) Canberra',
+	a: 3,
+	category: 'geography'
+}, {
+	q: 'Stratus, cumulus, cirrus and nimbus are types of what \n\n',
+	c: '1) Stones FC \n2) Clouds \n3) Winds',
+	a: 2,
+	category: 'geography'
+}, {
+	q: 'What is the name of a person who studies earthquakes? \n\n', //5
+	c: '1) Seismologist \n2) Archaeologist \n3) Dentist',
+	a: 1,
+	category: 'geography'
+}, {
+	q: 'In which country would you find the Leaning Tower of Pisa? \n\n',
+	c: '1) France \n2) Italy \n3) Greece',
+	a: 2,
+	category: 'geography'
+}, {
+	q: 'What is the name of the highest mountain on Earth \n\n',
+	c: '1) Mt Everest \n2) Kebnekaise \n3) K2',
+	a: 1,
+	category: 'geography'
+}, {
+	q: 'Helsinki is the capital city of which country? \n\n',
+	c: '1) India \n2) China \n3) Finland',
+	a: 3,
+	category: 'geography'
+}, {
+	q: 'The Yangtze is the longest river in the world? \n\n',
+	c: '1) Yes \n2) No \n3) WAT?',
+	a: 2,
+	category: 'geography'
+}, {
+	q: 'The terms "breeze" and "gale" help describe the speed of what? \n\n', // 10 GEOGRAPHY QUESTIONS
+	c: '1) Light \n2) Sound \n3) Wind',
+	a: 3,
+	category: 'geography'
+}, {
+	q: 'Which US state has the most farmland, in square miles? \n\n', //11
+	c: '1) Montana \n2) Utah \n3) Texas',
+	a: 3,
+	category: 'geography'
+}, {
+	q: 'What countrys language is Magyar? \n\n',
+	c: '1) Estonia \n2) Hungary \n3) Germany',
+	a: 2,
+	category: 'geography'
+}, { //13
+	q: 'What European capital stands on the river Aare? \n\n',
+	c: '1) Bern \n2) Paris \n3) Stockholm',
+	a: 1,
+	category: 'geography'
+}, { //14
+	q: 'In which country would you find the Taj Mahal? \n\n',
+	c: '1) India \n2) China \n3) Egypt',
+	a: 1,
+	category: 'geography'
+}, { //15
+	q: 'Which country has the most people? \n\n',
+	c: '1) India \n2) China \n3) America',
+	a: 2,
+	category: 'geography'
+}, { //16
+	q: 'How many states are there in the USA? \n\n',
+	c: '1) 40 \n2) 50 \n3) 60',
+	a: 2,
+	category: 'geography'
+}, { //17
+	q: 'On which continent is the Sahara desert? \n\n',
+	c: '1) Asia \n2) Europe \n3) Africa',
+	a: 3,
+	category: 'geography'
+}, { //18
+	q: 'In what city would you find Charing Cross station? \n\n',
+	c: '1) Glasgow \n2) Dublin \n3) London',
+	a: 3,
+	category: 'geography'
+}, { //19
+	q: 'How do you say ‘Hello’ in Spanish? \n\n',
+	c: '1) Bonjour \n2) Hola \n3) Hallo',
+	a: 2,
+	category: 'geography'
+}, { //20
+	q: 'If you had some yen to spend, what country would you be in? \n\n', // 20 GEOGRAPHY QUESTIONS
+	c: '1) Japan \n2) China \n3) India',
+	a: 1,
+	category: 'geography'
+}, { //21
+	q: 'Which country’s capital city is Berlin? \n\n',
+	c: '1) Germany \n2) France \n3) Belgium',
+	a: 1,
+	category: 'geography'
+}, { //22
+	q: 'On which continent would you find the South Pole? \n\n',
+	c: '1) Europe \n2) Africa \n3) Antarctica',
+	a: 3,
+	category: 'geography'
 }];

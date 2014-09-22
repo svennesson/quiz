@@ -121,7 +121,7 @@ var runGame = function () {
 	removeCategory(category);
 	alert('You need 1/10 points to make it to the next level');
 
-	for (var j = 0; j < 3; j++) { //for för vaje nivå
+	for (var j = 0; j < 10; j++) { //for för vaje nivå
 
 		var levelTest = levelCheck(points, levels[j]);
 		points = 0;
@@ -133,7 +133,7 @@ var runGame = function () {
 				checkAnswer(questions[0], answer);
 				removeQuestion();
 			}
-			if (l === 10 && j < 2) {
+			if (l === 10 && j < 9) {
 				if (points >= countLevel) { //om du klarat nivån
 					alert('Congratulations, you have made it to Level: ' + (countLevel + 1) + ' \nYou got ' + points + '/10 points\n\n' + 'You need ' + (countLevel + 1) + '/10 points to make it to the next level');
 					winOrLose = true;
