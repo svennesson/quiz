@@ -5,6 +5,7 @@ var points = 0;
 var answer;
 var winOrLose;
 var level;
+var playAgain;
 
 var levelsArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -110,9 +111,15 @@ var levelCheck = function (points, levels) {
 
 var checkWinOrLose = function (resultBool) {
 	if (resultBool !== true) {
-		alert('Game over');
+		playAgain = prompt('Game over, do you want to play again?');
+		if (playAgain === 'y' || playAgain === 'yes') {
+			runGame();
+		}
 	} else {
-		alert('You win!!!!!!!!!!!!');
+		alert('You win! Do you want to play again?');
+		if (playAgain === 'y' || playAgain === 'yes') {
+			runGame();
+		}
 	}
 };
 
