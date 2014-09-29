@@ -39,7 +39,6 @@ quiz.logic.removeCategory = function (choiseCategory) {
 		if (quiz.questions[i].category === choiseCategory) {
 			quiz.questions.splice(i, 1);
 			i--;
-			// alert('hittade objektet ' + choise);
 		}
 	}
 };
@@ -83,6 +82,7 @@ quiz.logic.levelCheck = function (points, levels) {
 
 quiz.logic.checkPlayAgain = function (answer) {
 	if (answer === 'y' || answer === 'yes') {
-		quiz.play(); //kom ihåg att skapa quiz.play eller ändra den här raden
+		//quiz.play(); //kom ihåg att skapa quiz.play eller ändra den här raden
+		location.reload();
 	}
 };

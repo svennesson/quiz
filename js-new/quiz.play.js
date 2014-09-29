@@ -7,7 +7,7 @@ quiz.play = function () {
 	var answer;
 	var checkAnswer;
 	var winOrLose;
-	var totalPoints;
+	var totalPoints = 0;
 	var checkPlay;
 	var level;
 
@@ -57,7 +57,9 @@ quiz.play = function () {
 		totalPoints = quiz.logic.addPoints(totalPoints, points); //räknar ihop totala poängen från varje nivå
 	}
 
+	quiz.ui.checkPoints(totalPoints); //visar hur många poäng man fått
 	checkPlay = quiz.ui.askPlayAgain(winOrLose); //kollar om man vunnit eller förlorat
 	quiz.logic.checkPlayAgain(checkPlay);
-	quiz.ui.checkPoints(totalPoints); //visar hur många poäng man fått
 };
+
+quiz.play();
