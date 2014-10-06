@@ -1,17 +1,132 @@
 <html>
 
-<script src="js/underscore.js"></script>
-<script src="js-new/quiz.js"></script>
-<script src="js-new/quiz.questions.js"></script>
-<script src="js-new/quiz.ui.js"></script>
-<script src="js-new/quiz.logic.js"></script>
-<script src="js-new/quiz.play.js"></script>
-
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/main.css" />
 </head>
-
 <body>
-	<h1>Quiz</h1>
+	<div class="box">
+			<div class="level" >
+				<header class="titlebar">
+					<h1>Quiz game level 1</h1>
+				</header>
+				<div class="content">
+					<p>Question: <span id="question"></span></p>
+					<p>Alternatives: <span id="alternatives"></span></p>
+					<p>
+						<input type="radio" name="choise" value="" checked="checked" /> Alternativ 1
+						<input type="radio" name="choise" value="" /> Alt 2
+						<input type="radio" name="choise" value="" /> Alt 3
+					</p>
+					<p><span class="button" id="nextButton">Next</span></p>
+				</div>
+			</div>
+			
+			<div class="level">
+				<header class="titlebar">
+					<h1>level 2</h1>
+				</header>
+				<div class="content">
+					<p>Question: <span id="question"></span></p>
+					<p>Alternatives: <span id="alternatives"></span></p>
+					<p>
+						<input type="radio" name="choise" value="" checked="checked" /> Alternativ 1
+						<input type="radio" name="choise" value="" /> Alt 2
+						<input type="radio" name="choise" value="" /> Alt 3
+					</p>
+					<p><span class="button" id="nextButton">Next</span></p>
+				</div>
+			</div>
+			
+			<div class="level">
+				<header class="titlebar">
+					<h1>level 3</h1>
+				</header>
+				<div class="content">
+					<p>Question: <span id="question"></span></p>
+					<p>Alternatives: <span id="alternatives"></span></p>
+					<p>
+						<input type="radio" name="choise" value="" checked="checked" /> Alternativ 1
+						<input type="radio" name="choise" value="" /> Alt 2
+						<input type="radio" name="choise" value="" /> Alt 3
+					</p>
+					<p><span class="button" id="nextButton">Next</span></p>
+				</div>
+			</div>
+
+			<div class="level" >
+				<header class="titlebar">
+					<h1>level 4</h1>
+				</header>
+				<div class="content">
+					<p>Question: <span id="question"></span></p>
+					<p>Alternatives: <span id="alternatives"></span></p>
+					<p>
+						<input type="radio" name="choise" value="" checked="checked" /> Alternativ 1
+						<input type="radio" name="choise" value="" /> Alt 2
+						<input type="radio" name="choise" value="" /> Alt 3
+					</p>
+					<p><span class="button" id="nextButton">Next</span></p>
+				</div>
+			</div>
+
+			<div class="level" >
+				<header class="titlebar">
+					<h1>level 5</h1>
+				</header>
+				<div class="content">
+					<p>Question: <span id="question"></span></p>
+					<p>Alternatives: <span id="alternatives"></span></p>
+					<p>
+						<input type="radio" name="choise" value="" checked="checked" /> Alternativ 1
+						<input type="radio" name="choise" value="" /> Alt 2
+						<input type="radio" name="choise" value="" /> Alt 3
+					</p>
+					<p><span class="button" id="nextButton">Next</span></p>
+				</div>
+			</div>
+			
+			<!-- A menu bar -->
+			<nav class="menubar">
+				<div>
+					<div class="levelIcon">
+						1
+					</div>
+					
+				</div>
+				<div class="levelActive">
+					<div class="levelIcon">
+						2
+					</div>
+				
+				</div>
+				<div>
+					<div class="levelIcon">
+						3
+					</div>
+					level 3
+				</div>
+				<div>
+					<div class="levelIcon">
+						4
+					</div>
+					level 4
+				</div>
+				<div>
+					<div class="levelIcon">
+						5
+					</div>
+					level 5
+				</div>
+			</nav>
+		</div>
+
+	<script src="js/underscore.js"></script>
+	<script src="js-new/quiz.js"></script>
+	<script src="js-new/quiz.questions.js"></script>
+	<script src="js-new/quiz.ui.js"></script>
+	<script src="js-new/quiz.logic.js"></script>
+	<!-- <script src="js-new/quiz.play.js"></script> -->
+
 </body>
 </html>
