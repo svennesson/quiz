@@ -6,7 +6,28 @@
 </head>
 <body>
 	<div class="box">
-			<div class="level" >
+			<div class="level" id="category" >
+				<header class="titlebar">
+					<h1>Quiz game category</h1>
+				</header>
+				<div class="content">
+					<p>Categories: <span id="categories"></span></p>
+					<p>Choose witch category u dont want.</p>
+					<p>
+						<select id="choise">
+						<option value="">None</option>
+						  <option value="sport">Sport</option>
+						  <option value="geography">Geography</option>
+						  <option value="general">General</option>
+						  <option value="children">Children</option>
+						  <option value="history">History</option>
+						</select>
+					</p>
+					<p><span class="button" id="startGame">Next</span></p>
+				</div>
+			</div>
+
+			<div class="level" id="level1" >
 				<header class="titlebar">
 					<h1>Quiz game level 1</h1>
 				</header>
@@ -22,7 +43,7 @@
 				</div>
 			</div>
 			
-			<div class="level">
+			<div class="level" id="level2">
 				<header class="titlebar">
 					<h1>level 2</h1>
 				</header>
@@ -38,7 +59,7 @@
 				</div>
 			</div>
 			
-			<div class="level">
+			<div class="level" id="level3">
 				<header class="titlebar">
 					<h1>level 3</h1>
 				</header>
@@ -54,7 +75,7 @@
 				</div>
 			</div>
 
-			<div class="level" >
+			<div class="level" id="level4" >
 				<header class="titlebar">
 					<h1>level 4</h1>
 				</header>
@@ -70,7 +91,7 @@
 				</div>
 			</div>
 
-			<div class="level" >
+			<div class="level" id="level5" >
 				<header class="titlebar">
 					<h1>level 5</h1>
 				</header>
@@ -121,11 +142,14 @@
 			</nav>
 		</div>
 
+	<script src="lib/jquery-1.11.1.min.js"></script>
 	<script src="js/underscore.js"></script>
 	<script src="js-new/quiz.js"></script>
 	<script src="js-new/quiz.questions.js"></script>
 	<script src="js-new/quiz.ui.js"></script>
 	<script src="js-new/quiz.logic.js"></script>
+	<script src="js-new/test.js"></script>
+
 	<!-- <script src="js-new/quiz.play.js"></script> -->
 
 </body>
