@@ -11,8 +11,7 @@
 					<h1>Quiz game category</h1>
 				</header>
 				<div class="content">
-					<p>Categories: <span id="categories"></span></p>
-					<p>Choose witch category u dont want.</p>
+					<p>Choose wich category you want to remove.</p>
 					<p>
 						<select id="choise">
 						<option value="">None</option>
@@ -23,7 +22,7 @@
 						  <option value="history">History</option>
 						</select>
 					</p>
-					<p><span class="button" id="startGame">Next</span></p>
+					<p><span class="button" id="startGame">Start game</span></p>
 				</div>
 			</div>
 
@@ -32,14 +31,15 @@
 					<h1>Quiz game level 1</h1>
 				</header>
 				<div class="content">
-					<p>Question: <span id="question"></span></p>
-					<p>Alternatives: <span id="alternatives"></span></p>
+					<p>You need 2/10 points to make it to level 2</p>
+					<p>Question: <span class="question"></span></p>
+					<p>Alternatives: <span class="alternatives"></span></p>
 					<p>
-						<input type="radio" name="choise" value="" checked="checked" /> Alternativ 1
-						<input type="radio" name="choise" value="" /> Alt 2
-						<input type="radio" name="choise" value="" /> Alt 3
+						<input type="radio" name="choise" value="1" checked="checked" /> 1
+						<input type="radio" name="choise" value="2" /> 2
+						<input type="radio" name="choise" value="3" /> 3
 					</p>
-					<p><span class="button" id="nextButton">Next</span></p>
+					<p><span class="button" class="nextButton">Next</span></p>
 				</div>
 			</div>
 			
@@ -48,8 +48,8 @@
 					<h1>level 2</h1>
 				</header>
 				<div class="content">
-					<p>Question: <span id="question"></span></p>
-					<p>Alternatives: <span id="alternatives"></span></p>
+					<p>Question: <span class="question"></span></p>
+					<p>Alternatives: <span class="alternatives"></span></p>
 					<p>
 						<input type="radio" name="choise" value="" checked="checked" /> Alternativ 1
 						<input type="radio" name="choise" value="" /> Alt 2
@@ -64,8 +64,8 @@
 					<h1>level 3</h1>
 				</header>
 				<div class="content">
-					<p>Question: <span id="question"></span></p>
-					<p>Alternatives: <span id="alternatives"></span></p>
+					<p>Question: <span class="question"></span></p>
+					<p>Alternatives: <span class="alternatives"></span></p>
 					<p>
 						<input type="radio" name="choise" value="" checked="checked" /> Alternativ 1
 						<input type="radio" name="choise" value="" /> Alt 2
@@ -80,8 +80,8 @@
 					<h1>level 4</h1>
 				</header>
 				<div class="content">
-					<p>Question: <span id="question"></span></p>
-					<p>Alternatives: <span id="alternatives"></span></p>
+					<p>Question: <span class="question"></span></p>
+					<p>Alternatives: <span class="alternatives"></span></p>
 					<p>
 						<input type="radio" name="choise" value="" checked="checked" /> Alternativ 1
 						<input type="radio" name="choise" value="" /> Alt 2
@@ -96,8 +96,8 @@
 					<h1>level 5</h1>
 				</header>
 				<div class="content">
-					<p>Question: <span id="question"></span></p>
-					<p>Alternatives: <span id="alternatives"></span></p>
+					<p>Question: <span class="question"></span></p>
+					<p>Alternatives: <span class="alternatives"></span></p>
 					<p>
 						<input type="radio" name="choise" value="" checked="checked" /> Alternativ 1
 						<input type="radio" name="choise" value="" /> Alt 2
@@ -147,6 +147,7 @@
 	<script src="js-new/quiz.js"></script>
 	<script src="js-new/quiz.questions.js"></script>
 	<script src="js-new/quiz.ui.js"></script>
+	<script src="js-new/quiz.ui.web.js"></script>
 	<script src="js-new/quiz.logic.js"></script>
 	<script src="js-new/test.js"></script>
 

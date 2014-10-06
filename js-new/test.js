@@ -2,17 +2,14 @@ quiz.test = function () {
 
 	'use strict';
 
-	$('.level').hide();
-	$('#category').show();
+	var showStartPage = function () {
+		$('.level').hide();
+		$('#category').show();
+	};
 
-
-
-	$('#startGame').click(function () {
-		var test = $('#choise').val();
-		alert(test);
-		alert('hejsan');
-	});
-
+	showStartPage();
+	quiz.ui.web.chooseCategory();
+	quiz.ui.web.askQuestion(quiz.questions[0]);
 
 };
 
