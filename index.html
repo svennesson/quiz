@@ -14,15 +14,15 @@
 					<p>Choose wich category you want to remove.</p>
 					<p>
 						<select id="choise">
-						<option value="">None</option>
-						  <option value="sport">Sport</option>
-						  <option value="geography">Geography</option>
-						  <option value="general">General</option>
-						  <option value="children">Children</option>
-						  <option value="history">History</option>
+							<option value="">None</option>
+							<option value="sport">Sport</option>
+							<option value="geography">Geography</option>
+							<option value="general">General</option>
+							<option value="children">Children</option>
+							<option value="history">History</option>
 						</select>
 					</p>
-					<p><span class="button" id="startGame">Start game</span></p>
+					<p><span class="button nextButton">Start game</span></p>
 				</div>
 			</div>
 
@@ -31,6 +31,7 @@
 					<h1>Quiz game level 1</h1>
 				</header>
 				<div class="content">
+					<p>Question <span class="currentQuestion">1</span> of 10</p>
 					<p>You need 2/10 points to make it to level 2</p>
 					<p>Question: <span class="question"></span></p>
 					<p>Alternatives: <span class="alternatives"></span></p>
@@ -39,7 +40,7 @@
 						<input type="radio" name="choise" value="2" /> 2
 						<input type="radio" name="choise" value="3" /> 3
 					</p>
-					<p><span class="button" class="nextButton">Next</span></p>
+					<p><span class="button nextButton">Next</span></p>
 				</div>
 			</div>
 			
@@ -48,6 +49,7 @@
 					<h1>level 2</h1>
 				</header>
 				<div class="content">
+					<p>Question <span class="currentQuestion">1</span> of 10</p>
 					<p>Question: <span class="question"></span></p>
 					<p>Alternatives: <span class="alternatives"></span></p>
 					<p>
@@ -55,7 +57,7 @@
 						<input type="radio" name="choise" value="" /> Alt 2
 						<input type="radio" name="choise" value="" /> Alt 3
 					</p>
-					<p><span class="button" id="nextButton">Next</span></p>
+					<p><span class="button nextButton">Next</span></p>
 				</div>
 			</div>
 			
@@ -64,6 +66,7 @@
 					<h1>level 3</h1>
 				</header>
 				<div class="content">
+					<p>Question <span class="currentQuestion">1</span> of 10</p>
 					<p>Question: <span class="question"></span></p>
 					<p>Alternatives: <span class="alternatives"></span></p>
 					<p>
@@ -71,7 +74,7 @@
 						<input type="radio" name="choise" value="" /> Alt 2
 						<input type="radio" name="choise" value="" /> Alt 3
 					</p>
-					<p><span class="button" id="nextButton">Next</span></p>
+					<p><span class="button nextButton">Next</span></p>
 				</div>
 			</div>
 
@@ -80,6 +83,7 @@
 					<h1>level 4</h1>
 				</header>
 				<div class="content">
+					<p>Question <span class="currentQuestion">1</span> of 10</p>
 					<p>Question: <span class="question"></span></p>
 					<p>Alternatives: <span class="alternatives"></span></p>
 					<p>
@@ -87,7 +91,7 @@
 						<input type="radio" name="choise" value="" /> Alt 2
 						<input type="radio" name="choise" value="" /> Alt 3
 					</p>
-					<p><span class="button" id="nextButton">Next</span></p>
+					<p><span class="button nextButton">Next</span></p>
 				</div>
 			</div>
 
@@ -96,6 +100,7 @@
 					<h1>level 5</h1>
 				</header>
 				<div class="content">
+					<p>Question <span class="currentQuestion">1</span> of 10</p>
 					<p>Question: <span class="question"></span></p>
 					<p>Alternatives: <span class="alternatives"></span></p>
 					<p>
@@ -103,7 +108,7 @@
 						<input type="radio" name="choise" value="" /> Alt 2
 						<input type="radio" name="choise" value="" /> Alt 3
 					</p>
-					<p><span class="button" id="nextButton">Next</span></p>
+					<p><span class="button nextButton">Next</span></p>
 				</div>
 			</div>
 			
@@ -147,11 +152,11 @@
 	<script src="js-new/quiz.js"></script>
 	<script src="js-new/quiz.questions.js"></script>
 	<script src="js-new/quiz.ui.js"></script>
-	<script src="js-new/quiz.ui.web.js"></script>
 	<script src="js-new/quiz.logic.js"></script>
-	<script src="js-new/test.js"></script>
+	<script src="js-new/quiz.ui.web.js"></script>
+	<!--<script src="js-new/test.js"></script>-->
 
-	<!-- <script src="js-new/quiz.play.js"></script> -->
+	<script src="js-new/quiz.play.js"></script>
 
 </body>
 </html>

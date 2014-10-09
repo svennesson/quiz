@@ -46,11 +46,21 @@ quiz.logic.removeCategory = function (choiseCategory) {
 quiz.logic.checkAnswer = function (question, answer) {
 	var checkAnswerBool;
 
+	//Number(answer);
+	answer = parseInt(answer, 10);
+	//alert(answer);
+	//alert(question.a);
+	console.log(answer);
+	console.log(question.a);
+	console.log(question.c);
+
 	if (question.a === answer) {
 		checkAnswerBool = true;
 	} else {
 		checkAnswerBool = false;
 	}
+
+	alert(checkAnswerBool);
 
 	return checkAnswerBool;
 };
@@ -85,4 +95,42 @@ quiz.logic.checkPlayAgain = function (answer) {
 		//quiz.play(); //kom ihåg att skapa quiz.play eller ändra den här raden
 		location.reload();
 	}
+};
+
+quiz.logic.currentQuestion = function (number) {
+	number = number + 1;
+	return number;
+};
+
+quiz.logic.nextLevel = function (questionNumber) {
+	// if (questionNumber === 10) {
+	// 	quiz.ui.web.level2();
+	// }
+	// if (questionNumber === 20) {
+	// 	quiz.ui.web.level3();
+	// }
+	// if (questionNumber === 30) {
+	// 	quiz.ui.web.level4();
+	// }
+	// if (questionNumber === 40) {
+	// 	quiz.ui.web.level5();
+	// }
+	// if (questionNumber === 50) {
+	// 	//sut, grattis!
+	// }
+
+	if (questionNumber === 1) {
+		quiz.ui.web.level1();
+	} else if (questionNumber === 10) {
+		quiz.ui.web.level2();
+	} else if (questionNumber === 20) {
+		quiz.ui.web.level3();
+	} else if (questionNumber === 30) {
+		quiz.ui.web.level4();
+	} else if (questionNumber === 40) {
+		quiz.ui.web.level5();
+	} else {
+		//du vann
+	}
+
 };

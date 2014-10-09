@@ -1,65 +1,91 @@
-'use strict';
-
 quiz.play = function () {
 
-	var points = 0;
-	var countLevel = 1;
-	var answer;
-	var checkAnswer;
-	var winOrLose;
-	var totalPoints = 0;
-	var checkPlay;
-	var level;
+	'use strict';
 
-	var levelsArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+	var questionNumber = 0;
 
-	var category = quiz.ui.chooseCategory(); //om man vill ta bort en kategori med frågor
-	var categoryChoise = quiz.logic.checkCategory(category); //kolla vilken kategori man har valt
-	quiz.logic.removeCategory(categoryChoise); //tar bort den kategorin man har valt
-	quiz.ui.startAlert();
+	var showStartPage = function () {
+		$('.level').hide();
+		$('#category').show();
+	};
 
-	for (level = 0; level < 10; level++) { //for för vaje nivå
+	showStartPage();
 
-		var levelTest = quiz.logic.levelCheck(points, levelsArray[level]); //kollar om man har tillräckligt med poäng för nästa nivå
-		points = 0; //sätts till noll för att räkna poäng per nivå
+	//$('#startGame').on('click', quiz.ui.web.chooseCategory);
 
-		if (levelTest === true) {
-			for (var l = 0; l < 10; l++) { //l är vilken fråga i varje nivå
-				quiz.questions = quiz.logic.shuffleQuestions(quiz.questions); //shufflar objekten/frågorna i arrayn
-				checkAnswer = quiz.ui.askQuestion(quiz.questions[0]); //tar ut fråga 1 som är random
-				answer = quiz.logic.checkAnswer(quiz.questions[0], checkAnswer); //kollar om svaret är rätt
+	$('.nextButton').on('click', function () {
 
-				if (answer === true) {
-					points = points + 1;
-					quiz.ui.correctAnswer();
-				} else {
-					quiz.ui.wrongAnswer(quiz.questions[0]);
-				}
-
-				quiz.logic.removeQuestion(); //tar bort den frågan ur array questions
-			}
-			if (l === 10 && level < 9) {
-				if (points >= countLevel) { //om du klarat nivån
-					alert('Congratulations, you have made it to Level: ' + (countLevel + 1) + ' \nYou got ' + points + '/10 points\n\n' + 'You need ' + (countLevel + 1) + '/10 points to make it to the next level');
-				} else {
-					winOrLose = false;
-				}
-				countLevel++;
-			}
-			if (l === 10 && level === 9) {
-				if (points >= countLevel) { //om du klarat nivå 10
-					winOrLose = true;
-				} else {
-					winOrLose = false;
-				}
-			}
+		if (questionNumber === 0) {
+			quiz.ui.web.chooseCategory();
 		}
-		totalPoints = quiz.logic.addPoints(totalPoints, points); //räknar ihop totala poängen från varje nivå
-	}
 
-	quiz.ui.checkPoints(totalPoints); //visar hur många poäng man fått
-	checkPlay = quiz.ui.askPlayAgain(winOrLose); //kollar om man vunnit eller förlorat
-	quiz.logic.checkPlayAgain(checkPlay);
+		if (questionNumber !== 0) {
+			quiz.ui.web.askQuestion(questionNumber);
+
+			var test = quiz.ui.web.getAnswer();
+			var answerBool = quiz.logic.checkAnswer(quiz.questions[0], test);
+			//alert(answerBool);
+			quiz.logic.removeQuestion();
+			quiz.logic.nextLevel(questionNumber);
+
+		}
+
+		questionNumber = questionNumber + 1;
+		//alert(questionNumber);
+	});
+
+	/*
+
+	$('#nextButton1').on('click', function () {
+		currentQuestion = currentQuestion + 1;
+		quiz.ui.web.level1(currentQuestion);
+
+		if (currentQuestion === 10) {
+			currentQuestion = 0;
+		}
+	});
+
+
+
+	$('#nextButton2').on('click', function () {
+		currentQuestion = currentQuestion + 1;
+		quiz.ui.web.level2(currentQuestion);
+
+		if (currentQuestion === 10) {
+			currentQuestion = 0;
+		}
+	});
+
+	$('#nextButton3').on('click', function () {
+		currentQuestion = currentQuestion + 1;
+		quiz.ui.web.level3(currentQuestion);
+
+		if (currentQuestion === 10) {
+			currentQuestion = 0;
+		}
+	});
+
+	$('#nextButton4').on('click', function () {
+		currentQuestion = currentQuestion + 1;
+		quiz.ui.web.level4(currentQuestion);
+
+		if (currentQuestion === 10) {
+			currentQuestion = 0;
+		}
+	});
+
+	$('#nextButton5').on('click', function () {
+		currentQuestion = currentQuestion + 1;
+		quiz.ui.web.level5(currentQuestion);
+
+		if (currentQuestion === 10) {
+			currentQuestion = 0;
+		}
+	});
+	//$('#nextButton1').on('click', quiz.ui.web.nextQuestion);
+
+	*/
+
 };
 
 quiz.play();
