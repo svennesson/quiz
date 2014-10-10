@@ -35,6 +35,7 @@ quiz.ui.web.level1 = function () {
 	$('.level').hide();
 	$('#level1').show();
 	$('.currentQuestion').text(1);
+	$('#levelIcon1').toggleClass('levelActive');
 
 	// if (questionNumber < 10) {
 	// 	$('.currentQuestion').text(questionNumber + 1);
@@ -53,6 +54,8 @@ quiz.ui.web.level2 = function () {
 	$('.level').hide();
 	$('#level2').show();
 	$('.currentQuestion').text(1);
+	$('#levelIcon1').toggleClass('levelActive');
+	$('#levelIcon2').toggleClass('levelActive');
 
 	/*	if (questionNumber < 10) {
 		$('.currentQuestion').text(questionNumber + 1);
@@ -69,6 +72,8 @@ quiz.ui.web.level3 = function () {
 	$('.level').hide();
 	$('#level3').show();
 	$('.currentQuestion').text(1);
+	$('#levelIcon2').toggleClass('levelActive');
+	$('#levelIcon3').toggleClass('levelActive');
 
 	/*if (questionNumber < 10) {
 		$('.currentQuestion').text(questionNumber + 1);
@@ -85,6 +90,8 @@ quiz.ui.web.level4 = function () {
 	$('.level').hide();
 	$('#level4').show();
 	$('.currentQuestion').text(1);
+	$('#levelIcon3').toggleClass('levelActive');
+	$('#levelIcon4').toggleClass('levelActive');
 	/*if (questionNumber < 10) {
 		$('.currentQuestion').text(questionNumber + 1);
 		quiz.ui.web.askQuestion();
@@ -100,6 +107,8 @@ quiz.ui.web.level5 = function () {
 	$('.level').hide();
 	$('#level5').show();
 	$('.currentQuestion').text(1);
+	$('#levelIcon4').toggleClass('levelActive');
+	$('#levelIcon5').toggleClass('levelActive');
 	/*	if (questionNumber < 10) {
 		$('.currentQuestion').text(questionNumber + 1);
 		quiz.ui.web.askQuestion();

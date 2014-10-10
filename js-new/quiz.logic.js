@@ -60,7 +60,7 @@ quiz.logic.checkAnswer = function (question, answer) {
 		checkAnswerBool = false;
 	}
 
-	alert(checkAnswerBool);
+	//alert(checkAnswerBool);
 
 	return checkAnswerBool;
 };
