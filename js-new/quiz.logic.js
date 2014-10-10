@@ -119,7 +119,7 @@ quiz.logic.nextLevel = function (questionNumber) {
 	// 	//sut, grattis!
 	// }
 
-	if (questionNumber === 1) {
+	if (questionNumber === 0) {
 		quiz.ui.web.level1();
 	} else if (questionNumber === 10) {
 		quiz.ui.web.level2();

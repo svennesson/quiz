@@ -15,20 +15,25 @@ quiz.play = function () {
 
 	$('.nextButton').on('click', function () {
 
+
 		if (questionNumber === 0) {
 			quiz.ui.web.chooseCategory();
+			quiz.ui.web.askQuestion(questionNumber);
 		}
+
+
+
+		var answer = quiz.ui.web.getAnswer();
 
 		if (questionNumber !== 0) {
-			quiz.ui.web.askQuestion(questionNumber);
-
-			var test = quiz.ui.web.getAnswer();
-			var answerBool = quiz.logic.checkAnswer(quiz.questions[0], test);
-			//alert(answerBool);
+			var answerBool = quiz.logic.checkAnswer(quiz.questions[0], answer);
 			quiz.logic.removeQuestion();
-			quiz.logic.nextLevel(questionNumber);
-
+			quiz.ui.web.askQuestion(questionNumber);
 		}
+
+		//alert(answerBool);
+
+		quiz.logic.nextLevel(questionNumber);
 
 		questionNumber = questionNumber + 1;
 		//alert(questionNumber);
