@@ -102,35 +102,60 @@ quiz.logic.currentQuestion = function (number) {
 	return number;
 };
 
-quiz.logic.nextLevel = function (questionNumber) {
-	// if (questionNumber === 10) {
-	// 	quiz.ui.web.level2();
-	// }
-	// if (questionNumber === 20) {
-	// 	quiz.ui.web.level3();
-	// }
-	// if (questionNumber === 30) {
-	// 	quiz.ui.web.level4();
-	// }
-	// if (questionNumber === 40) {
-	// 	quiz.ui.web.level5();
-	// }
-	// if (questionNumber === 50) {
-	// 	//sut, grattis!
-	// }
+quiz.logic.nextLevel = function (questionNumber, points) {
 
 	if (questionNumber === 0) {
 		quiz.ui.web.level1();
 	} else if (questionNumber === 10) {
-		quiz.ui.web.level2();
+
+		if (points > 1) {
+			quiz.ui.web.level2();
+		} else {
+			questionNumber = 100;
+		}
+
 	} else if (questionNumber === 20) {
-		quiz.ui.web.level3();
+
+		if (points > 3) {
+			quiz.ui.web.level3();
+		} else {
+			questionNumber = 100;
+		}
+
 	} else if (questionNumber === 30) {
-		quiz.ui.web.level4();
+
+		if (points > 5) {
+			quiz.ui.web.level4();
+		} else {
+			questionNumber = 100;
+		}
+
 	} else if (questionNumber === 40) {
-		quiz.ui.web.level5();
-	} else {
-		//du vann
+
+		if (points > 7) {
+			quiz.ui.web.level5();
+		} else {
+			questionNumber = 100;
+		}
+
+	} else if (questionNumber === 50) {
+
+		if (points > 9) {
+			//you win
+		} else {
+			questionNumber = 100;
+		}
+	} else if (questionNumber === 100) {
+		$('.level').hide();
 	}
 
+};
+
+quiz.logic.addPoints = function (points, bool) {
+
+	if (bool === true) {
+		points = points + 1;
+	}
+
+	return points;
 };

@@ -117,3 +117,18 @@ quiz.ui.web.level5 = function () {
 		$('#level5').hide();
 	}*/
 };
+
+quiz.ui.web.displayAnswer = function (bool) {
+	if (bool === true) {
+		$('.showAnswer').text('Correct answer');
+		setTimeout(function () {
+			$('.showAnswer').text('');
+		}, 2000);
+
+	} else {
+		$('.showAnswer').text('Wrong answer');
+		setTimeout(function () {
+			$('.showAnswer').text('');
+		}, 2000);
+	}
+};

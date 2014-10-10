@@ -4,6 +4,8 @@ quiz.play = function () {
 
 	var questionNumber = 0;
 	var questionCount = 0;
+	var points = 0;
+	var totalPoints = 0;
 
 	var showStartPage = function () {
 		$('.level').hide();
@@ -25,12 +27,22 @@ quiz.play = function () {
 		if (questionNumber !== 0) {
 			var answer = quiz.ui.web.getAnswer();
 			var answerBool = quiz.logic.checkAnswer(quiz.questions[0], answer);
+
+			points = quiz.logic.addPoints(points, answerBool);
+			quiz.ui.web.displayAnswer(answerBool); //fel eller rätt svar
+			// if (answerBool === true) {
+			// 	points = points + 1;
+			// 	quiz.ui.web.correctAnswer(); //skapa den här smartass
+			// }
+
 			quiz.logic.removeQuestion();
 			quiz.ui.web.askQuestion(questionCount);
 		}
 
 		if (questionCount === 10) {
 			questionCount = 0;
+			//totalPoints = totalPoints + points;
+			//points = 0;
 		}
 
 		//alert(answerBool);
@@ -39,60 +51,13 @@ quiz.play = function () {
 
 		questionNumber = questionNumber + 1;
 		questionCount = questionCount + 1;
+
+
+		//alert(points);
 		//alert(questionNumber);
 	});
 
-	/*
 
-	$('#nextButton1').on('click', function () {
-		currentQuestion = currentQuestion + 1;
-		quiz.ui.web.level1(currentQuestion);
-
-		if (currentQuestion === 10) {
-			currentQuestion = 0;
-		}
-	});
-
-
-
-	$('#nextButton2').on('click', function () {
-		currentQuestion = currentQuestion + 1;
-		quiz.ui.web.level2(currentQuestion);
-
-		if (currentQuestion === 10) {
-			currentQuestion = 0;
-		}
-	});
-
-	$('#nextButton3').on('click', function () {
-		currentQuestion = currentQuestion + 1;
-		quiz.ui.web.level3(currentQuestion);
-
-		if (currentQuestion === 10) {
-			currentQuestion = 0;
-		}
-	});
-
-	$('#nextButton4').on('click', function () {
-		currentQuestion = currentQuestion + 1;
-		quiz.ui.web.level4(currentQuestion);
-
-		if (currentQuestion === 10) {
-			currentQuestion = 0;
-		}
-	});
-
-	$('#nextButton5').on('click', function () {
-		currentQuestion = currentQuestion + 1;
-		quiz.ui.web.level5(currentQuestion);
-
-		if (currentQuestion === 10) {
-			currentQuestion = 0;
-		}
-	});
-	//$('#nextButton1').on('click', quiz.ui.web.nextQuestion);
-
-	*/
 
 };
 
