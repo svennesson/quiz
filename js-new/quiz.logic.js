@@ -34,7 +34,6 @@ quiz.logic.checkCategory = function (choise) {
 };
 
 quiz.logic.removeCategory = function (choiseCategory) {
-
 	for (var i = 0; i < quiz.questions.length; i++) {
 		if (quiz.questions[i].category === choiseCategory) {
 			quiz.questions.splice(i, 1);
@@ -46,12 +45,10 @@ quiz.logic.removeCategory = function (choiseCategory) {
 quiz.logic.checkAnswer = function (question, answer) {
 	var checkAnswerBool;
 
-	//Number(answer);
 	answer = parseInt(answer, 10);
-	//alert(answer);
-	//alert(question.a);
-	console.log(answer);
-	console.log(question.a);
+
+	console.log('your answer: ' + answer);
+	console.log('correct answer: ' + question.a);
 	console.log(question.c);
 
 	if (question.a === answer) {
@@ -59,8 +56,6 @@ quiz.logic.checkAnswer = function (question, answer) {
 	} else {
 		checkAnswerBool = false;
 	}
-
-	//alert(checkAnswerBool);
 
 	return checkAnswerBool;
 };
@@ -103,56 +98,53 @@ quiz.logic.currentQuestion = function (number) {
 };
 
 quiz.logic.nextLevel = function (questionNumber, points) {
-
 	if (questionNumber === 0) {
 		quiz.ui.web.level1();
 	} else if (questionNumber === 10) {
-
 		if (points > 1) {
-			quiz.ui.web.level2();
+			quiz.ui.web.level2(points);
 		} else {
 			questionNumber = 100;
 		}
-
 	} else if (questionNumber === 20) {
-
 		if (points > 3) {
-			quiz.ui.web.level3();
+			quiz.ui.web.level3(points);
 		} else {
 			questionNumber = 100;
 		}
-
 	} else if (questionNumber === 30) {
-
 		if (points > 5) {
-			quiz.ui.web.level4();
+			quiz.ui.web.level4(points);
 		} else {
 			questionNumber = 100;
 		}
-
 	} else if (questionNumber === 40) {
-
 		if (points > 7) {
-			quiz.ui.web.level5();
+			quiz.ui.web.level5(points);
 		} else {
 			questionNumber = 100;
 		}
-
 	} else if (questionNumber === 50) {
-
-		if (points > 9) {
-			//you win
+		if (points > 9) { //you win
+			//$('#endResult').text('You Win!');
+			//quiz.ui.web.displayResult();
+			$('.level').hide();
+			$('#endResult').text('You Win!');
+			$('#result').show();
 		} else {
 			questionNumber = 100;
 		}
-	} else if (questionNumber === 100) {
-		$('.level').hide();
 	}
-
+	if (questionNumber === 100) { //you loose
+		//$('#endResult').text('You Loose!');
+		//quiz.ui.web.displayResult();
+		$('.level').hide();
+		$('#endResult').text('You Loose!');
+		$('#result').show();
+	}
 };
 
 quiz.logic.addPoints = function (points, bool) {
-
 	if (bool === true) {
 		points = points + 1;
 	}

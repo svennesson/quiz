@@ -1,5 +1,4 @@
 <html>
-
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/main.css" />
@@ -11,18 +10,20 @@
 					<h1>Quiz game category</h1>
 				</header>
 				<div class="content">
-					<p>Choose wich category you want to remove.</p>
-					<p>
-						<select id="choise">
-							<option value="">None</option>
-							<option value="sport">Sport</option>
-							<option value="geography">Geography</option>
-							<option value="general">General</option>
-							<option value="children">Children</option>
-							<option value="history">History</option>
-						</select>
-					</p>
-					<p><span class="button nextButton">Start game</span></p>
+					<div class="innerContent">
+						<p>Choose wich category you want to remove.</p>
+						<p>
+							<select id="choise">
+								<option value="">None</option>
+								<option value="sport">Sport</option>
+								<option value="geography">Geography</option>
+								<option value="general">General</option>
+								<option value="children">Children</option>
+								<option value="history">History</option>
+							</select>
+						</p>
+						<p><span class="button nextButton">Start game</span></p>
+					</div>
 				</div>
 			</div>
 
@@ -31,17 +32,21 @@
 					<h1>Quiz game level 1</h1>
 				</header>
 				<div class="content">
-					<p>Question <span class="currentQuestion">1</span> of 10</p>
-					<p>You need 2/10 points to make it to level 2</p>
-					<p>Question: <span class="question"></span></p>
-					<p>Alternatives: <span class="alternatives"></span></p>
-					<p>
-						<input type="radio" name="choise" value="1" checked="checked" /> 1
-						<input type="radio" name="choise" value="2" /> 2
-						<input type="radio" name="choise" value="3" /> 3
-					</p>
-					<p><span class="button nextButton">Next</span></p>
-					<div><span class="showAnswer"></span></div>
+					<div class="innerContent">
+						<p>Question <span class="currentQuestion">1</span> of <span class="b">10</span></p>
+						<p><span class="b">Question: </span><span class="question"></span></p>
+						<p><span class="b">Alternatives: </span><span class="alternatives"></span></p>
+						<p>
+							<input type="radio" name="choise" value="1" /> 1
+							<input type="radio" name="choise" value="2" /> 2
+							<input type="radio" name="choise" value="3" /> 3
+						</p>
+						<p><span class="button nextButton">Next</span></p>
+					</div>
+					<div>
+						<p><span class="showPoints"></span></p>
+						<p><span class="showAnswer"></span></p>
+					</div>
 				</div>
 			</div>
 			
@@ -50,16 +55,21 @@
 					<h1>level 2</h1>
 				</header>
 				<div class="content">
-					<p>Question <span class="currentQuestion">1</span> of 10</p>
-					<p>Question: <span class="question"></span></p>
-					<p>Alternatives: <span class="alternatives"></span></p>
-					<p>
-						<input type="radio" name="choise" value="" checked="checked" /> Alternativ 1
-						<input type="radio" name="choise" value="" /> Alt 2
-						<input type="radio" name="choise" value="" /> Alt 3
-					</p>
-					<p><span class="button nextButton">Next</span></p>
-					<div><span class="showAnswer"></span></div>
+					<div class="innerContent">
+						<p>Question <span class="currentQuestion">1</span> of <span class="b">10</span></p>
+						<p><span class="b">Question: </span><span class="question"></span></p>
+						<p><span class="b">Alternatives: </span><span class="alternatives"></span></p>
+						<p>
+							<input type="radio" name="choise" value="1" /> 1
+							<input type="radio" name="choise" value="2" /> 2
+							<input type="radio" name="choise" value="3" /> 3
+						</p>
+						<p><span class="button nextButton">Next</span></p>
+					</div>
+					<div>
+						<p><span class="showPoints"></span></p>
+						<p><span class="showAnswer"></span></p>
+					</div>
 				</div>
 			</div>
 			
@@ -68,16 +78,21 @@
 					<h1>level 3</h1>
 				</header>
 				<div class="content">
-					<p>Question <span class="currentQuestion">1</span> of 10</p>
-					<p>Question: <span class="question"></span></p>
-					<p>Alternatives: <span class="alternatives"></span></p>
-					<p>
-						<input type="radio" name="choise" value="" checked="checked" /> Alternativ 1
-						<input type="radio" name="choise" value="" /> Alt 2
-						<input type="radio" name="choise" value="" /> Alt 3
-					</p>
-					<p><span class="button nextButton">Next</span></p>
-					<div><span class="showAnswer"></span></div>
+					<div class="innerContent">
+						<p>Question <span class="currentQuestion">1</span> of <span class="b">10</span></p>
+						<p><span class="b">Question: </span><span class="question"></span></p>
+						<p><span class="b">Alternatives: </span><span class="alternatives"></span></p>
+						<p>
+							<input type="radio" name="choise" value="1" /> 1
+							<input type="radio" name="choise" value="2" /> 2
+							<input type="radio" name="choise" value="3" /> 3
+						</p>
+						<p><span class="button nextButton">Next</span></p>
+					</div>
+					<div>
+						<p><span class="showPoints"></span></p>
+						<p><span class="showAnswer"></span></p>
+					</div>
 				</div>
 			</div>
 
@@ -86,16 +101,21 @@
 					<h1>level 4</h1>
 				</header>
 				<div class="content">
-					<p>Question <span class="currentQuestion">1</span> of 10</p>
-					<p>Question: <span class="question"></span></p>
-					<p>Alternatives: <span class="alternatives"></span></p>
-					<p>
-						<input type="radio" name="choise" value="" checked="checked" /> Alternativ 1
-						<input type="radio" name="choise" value="" /> Alt 2
-						<input type="radio" name="choise" value="" /> Alt 3
-					</p>
-					<p><span class="button nextButton">Next</span></p>
-					<div><span class="showAnswer"></span></div>
+					<div class="innerContent">
+						<p>Question <span class="currentQuestion">1</span> of <span class="b">10</span></p>
+						<p><span class="b">Question: </span><span class="question"></span></p>
+						<p><span class="b">Alternatives: </span><span class="alternatives"></span></p>
+						<p>
+							<input type="radio" name="choise" value="1" /> 1
+							<input type="radio" name="choise" value="2" /> 2
+							<input type="radio" name="choise" value="3" /> 3
+						</p>
+						<p><span class="button nextButton">Next</span></p>
+					</div>
+					<div>
+						<p><span class="showPoints"></span></p>
+						<p><span class="showAnswer"></span></p>
+					</div>
 				</div>
 			</div>
 
@@ -104,16 +124,33 @@
 					<h1>level 5</h1>
 				</header>
 				<div class="content">
-					<p>Question <span class="currentQuestion">1</span> of 10</p>
-					<p>Question: <span class="question"></span></p>
-					<p>Alternatives: <span class="alternatives"></span></p>
-					<p>
-						<input type="radio" name="choise" value="" checked="checked" /> Alternativ 1
-						<input type="radio" name="choise" value="" /> Alt 2
-						<input type="radio" name="choise" value="" /> Alt 3
-					</p>
-					<p><span class="button nextButton">Next</span></p>
-					<div><span class="showAnswer"></span></div>
+					<div class="innerContent">
+						<p>Question <span class="currentQuestion">1</span> of <span class="b">10</span></p>
+						<p><span class="b">Question: </span><span class="question"></span></p>
+						<p><span class="b">Alternatives: </span><span class="alternatives"></span></p>
+						<p>
+							<input type="radio" name="choise" value="1" /> 1
+							<input type="radio" name="choise" value="2" /> 2
+							<input type="radio" name="choise" value="3" /> 3
+						</p>
+						<p><span class="button nextButton">Next</span></p>
+					</div>
+					<div>
+						<p><span class="showPoints"></span></p>
+						<p><span class="showAnswer"></span></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="level" id="result" >
+				<header class="titlebar">
+					<h1>End</h1>
+				</header>
+				<div class="content">
+					<div class="innerContent">
+						<p><span id="endResult">Win/Loose</span></p>
+						<p><span class="button" id='restart'>Restart</span></p>
+					</div>
 				</div>
 			</div>
 			
